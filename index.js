@@ -14,3 +14,7 @@ app.post('/whatsapp-msg', (req, res) => {
     console.log(req.body)
     res.send('ok')
 })
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'))
+})
